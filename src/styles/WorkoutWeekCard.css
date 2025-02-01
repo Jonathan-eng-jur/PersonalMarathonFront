@@ -1,0 +1,12 @@
+.workout-week-card-content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .workout-field {
+    margin-bottom: 10px;
+  }
+  
+  .workout-input {
+    margin-top: 2px;
+  }

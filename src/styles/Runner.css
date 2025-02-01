@@ -1,0 +1,90 @@
+.runner-card {
+    background-color: #1d2a3a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+    text-align: center; 
+    min-height: 70px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    width: 100%;
+    max-width: 400px;
+}
+
+.runner-card:hover {
+    transform: translateY(-10px);
+}
+
+.runner-info p {
+    margin: 10px 0;
+    color: #ddd;
+    font-size: 16px;
+}
+
+.runner-info strong {
+    color: #fff;
+    font-size: 18px; 
+}
+
+.runner-info .name {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.runners-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.week-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .week-title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .week-date-range {
+    font-size: 0.9em;
+    color: #ffffff;
+  }
+  
+  .expand-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .expand-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .week-status {
+    margin-bottom: 10px;
+  }
+  
+  .status-registered {
+    color: green;
+  }
+  
+  .status-not-registered {
+    color: red;
+  }

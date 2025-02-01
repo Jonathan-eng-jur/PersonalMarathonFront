@@ -1,0 +1,331 @@
+.container {
+  width: 100%;
+  max-width: none;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0f1522;
+  min-height: 100vh;
+  color: white;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2575fc;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 2px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 38px;
+    line-height: 45px;
+  }
+}
+
+/* Cabeçalho */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  background-color: #004ff9;
+  width: 100%;
+}
+
+.logo {
+  max-width: 200px;
+  height: auto;
+}
+
+.main-content {
+  width: 100%;
+  max-width: none;
+  text-align: center;
+  padding: 0 5%;
+}
+
+.error {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.search-container, .register-form, .runner-details {
+  margin-top: 20px;
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: #1d2a3a;
+  color: white;
+}
+.input-field::placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+.button, .button-cancel {
+  display: inline-block;
+  white-space: nowrap;
+  background-color: #004ff9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  width: 200px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.button:hover, .button-cancel:hover {
+  background-color: #003bb3;
+}
+
+.button-cancel {
+  background-color: #d9534f;
+}
+
+.button-cancel:hover {
+  background-color: #c9302c;
+}
+
+.search-container button {
+  width: 200px;
+  background-color: #004ff9;
+}
+
+.register-button button {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: #5cb85c;
+}
+
+button[type="submit"]:hover {
+  background-color: #4cae4c;
+}
+
+button[type="button"] {
+  background-color: #f0ad4e;
+}
+
+button[type="button"]:hover {
+  background-color: #eea236;
+}
+
+.runner-details, .register-button {
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: auto;
+  padding: 10px 0;
+  background-color: #004ff9;
+  color: white;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .button, .button-cancel, .search-container button, .register-button button {
+    width: 100%;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+  .main-content {
+    max-width: 1400px;
+  }
+}
+
+.workout-week-card {
+  background-color: #1d2a3a;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+  text-align: left;
+  width: 100%;
+  max-width: 600px;
+}
+
+.workout-week-card:hover {
+  transform: translateY(-5px);
+}
+
+.workout-week-card.expanded {
+  max-height: 1000px;
+}
+
+.week-header {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.expand-button:hover {
+  background-color: #218838;
+}
+
+.week-status {
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.status-registered {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-not-registered {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.week-workout {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.workout-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.workout-field label {
+  color: #ddd;
+  font-size: 14px;
+}
+
+.workout-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.workout-register-button {
+  margin-top: 10px;
+  background-color: #17a2b8;
+}
+
+.workout-register-button:hover {
+  background-color: #138496;
+}
+
+.workout-field input[type="number"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #2c3e50;
+  color: white;
+}
+
+.workout-field label {
+  color: #ddd;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  width: 300px;
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid #2575fc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.button {
+  margin-left: 10px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  color: white;
+  background-color: #2575fc;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #02006d;
+}

@@ -1,0 +1,33 @@
+footer {
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: #004ff9;
+  color: white;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.social-links {
+  margin-top: 20px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  color: white;
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  footer p {
+    font-size: 14px;
+  }
+
+  .social-icon {
+    margin: 0 8px;
+  }
+}
