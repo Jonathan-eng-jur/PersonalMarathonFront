@@ -2,10 +2,10 @@
 import React, { useEffect, useState } from "react";
 import { getRunners } from "../services/api";
 import { Link } from "react-router-dom";
-import Header from "../styles/Header.js"; // Importando Header
-import Footer from "../styles/Footer.js"; // Importando Footer
-import '../styles/Home.css'; // Para as estilizações gerais
-import '../styles/Runner.css'; // Importando o CSS específico para o Runner
+import Header from "../styles/Header.js";
+import Footer from "../styles/Footer.js";
+import '../styles/Home.css';
+import '../styles/Runner.css';
 
 const Runners = () => {
   const [runners, setRunners] = useState([]);
@@ -19,8 +19,7 @@ const Runners = () => {
 
   return (
     <div className="container">
-      <Header /> {/* Chama o Header aqui */}
-      
+      <Header /> 
       <main className="main-content">
         <h1 className="title">Lista de Corredores</h1>
         {error && <p className="error">{error}</p>}
@@ -28,7 +27,7 @@ const Runners = () => {
           {runners.map((runner) => (
             <div key={runner.email} className="runner-card">
               <div className="runner-info">
-                <p className="name">{runner.name || "Nome não informado"}</p> {/* Nome centralizado */}
+                <p className="name">{runner.name || "Nome não informado"}</p>
                 <p><strong>Email:</strong> {runner.email}</p>
               </div>
             </div>
@@ -37,7 +36,7 @@ const Runners = () => {
         <Link to="/" className="button">Voltar para a Home</Link>
       </main>
 
-      <Footer /> {/* Chama o Footer aqui */}
+      <Footer />
     </div>
   );
 };

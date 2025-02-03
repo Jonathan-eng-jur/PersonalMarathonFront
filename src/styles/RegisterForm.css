@@ -33,7 +33,7 @@
   
   .button-container {
     display: flex;
-    gap: 10px; /* Espaçamento entre os botões */
+    gap: 10px;
   }
   
   .button, .button-cancel {

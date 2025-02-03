@@ -1,6 +1,6 @@
 import React from "react";
-import "../styles/Header.css"; // Adicione o CSS do header aqui
-import logo from '../img/logo-marathon.webp'; // Certifique-se de que o logo está no caminho correto
+import "../styles/Header.css";
+import logo from '../img/logo-marathon.webp';
 
 const Header = () => {
   return (
