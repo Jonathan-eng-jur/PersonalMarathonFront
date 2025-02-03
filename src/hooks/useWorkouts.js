@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { getWorkoutsForRunner } from "../services/api";
+import { getWorkoutsForRunner } from "../services/runnerService";
 import { INITIAL_WEEKS } from "../utils/constants";
 
 const useWorkouts = () => {

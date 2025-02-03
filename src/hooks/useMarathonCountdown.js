@@ -1,12 +1,15 @@
 import { useEffect, useState } from "react";
 
 const useMarathonCountdown = () => {
-  const [countdown, setCountdown] = useState({
+
+  const valuesDefault = {
     days: 0,
     hours: 0,
     minutes: 0,
     seconds: 0,
-  });
+  };
+
+  const [countdown, setCountdown] = useState(valuesDefault);
 
   useEffect(() => {
     const marathonDate = new Date("2025-06-22T06:00:00").getTime();
@@ -23,7 +26,7 @@ const useMarathonCountdown = () => {
 
         setCountdown({ days, hours, minutes, seconds });
       } else {
-        setCountdown({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+        setCountdown(valuesDefault);
       }
     };
 

@@ -62,10 +62,11 @@ const CountdownLabel = styled.div`
 
 const CountdownDisplay = () => {
   const { days, hours, minutes, seconds } = useMarathonCountdown();
+  const title = "Contagem Regressiva para a Maratona";
 
   return (
     <CountdownContainer>
-      <CountdownTitle>Contagem Regressiva para a Maratona:</CountdownTitle>
+      <CountdownTitle>{title}</CountdownTitle>
       <CountdownGrid>
         <CountdownItem>
           <CountdownNumber>{days}</CountdownNumber>

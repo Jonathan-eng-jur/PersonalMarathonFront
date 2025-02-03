@@ -1,9 +1,9 @@
 
 import React, { useEffect, useState } from "react";
-import { getRunners } from "../services/api";
 import { Link } from "react-router-dom";
+import { getRunners } from "../services/runnerService.js";
+import Footer from "../styles/Footer.js"; 
 import Header from "../styles/Header.js";
-import Footer from "../styles/Footer.js";
 import '../styles/Home.css';
 import '../styles/Runner.css';
 
