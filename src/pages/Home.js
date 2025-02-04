@@ -32,7 +32,7 @@ const Home = () => {
     }
   };
 
-  const cadastrarTreinosPadrao = async (email) => {
+  const createDefaultWorkouts = async (email) => {
     try {
       await Promise.all(
         DEFAULT_WORKOUTS.map((treino) => {
@@ -58,7 +58,7 @@ const Home = () => {
     try {
       const response = await createOrUpdateRunner(newRunner);
       setSelectedRunner(response.data);
-      await cadastrarTreinosPadrao(response.data.email);
+      await createDefaultWorkouts(response.data.email);
       await loadWorkouts(response.data.email);
       setShowRegisterForm(false);
       setError("");
