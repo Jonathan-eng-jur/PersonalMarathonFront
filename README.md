@@ -1,6 +1,16 @@
 # Personal Marathon 🏃‍♂️🏆
 
-O Personal Marathon é um projeto desenvolvido para ajudar usuários a planejar e acompanhar suas maratonas de estudo, fitness ou qualquer outra meta pessoal. Com recursos de acompanhamento de progresso, lembretes e análises, o projeto visa aumentar a produtividade e motivação dos usuários.
+O Personal Marathon é uma aplicação desenvolvida para auxiliar corredores no planejamento e acompanhamento de seus treinos para a Maratona do Rio de Janeiro 2025. O projeto oferece funcionalidades como:
+
+Cadastro de usuários para personalizar o acompanhamento.
+
+Registro e monitoramento de treinos, com foco nos treinos longos.
+
+Sugestões pré-cadastradas de treinos longos para um período de 21 semanas antes da prova.
+
+Cálculo automático do pace a partir do tempo registrado em cada treino.
+
+O objetivo principal é aumentar a produtividade e motivação dos corredores, ajudando-os a acompanhar sua evolução ao longo da preparação.
 
 ## 🚀 Tecnologias
 
